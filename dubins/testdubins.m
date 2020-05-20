@@ -1,6 +1,6 @@
-R=1;
-Xi=10*pi/180;
-ip=[0 0];
-fp=[1.2 1.2];
+radius=1;
+initial_heading=45*pi/180;
+initial_pos=[0 0];
+final_pos=[5 5];
 
-[d,Xf,angD,D]=dubins(ip,fp,Xi,R);
+[direction, final_heading, angular_dist, total_dist] = dubins(initial_pos, final_pos, initial_heading, radius);
